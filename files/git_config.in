@@ -1,0 +1,28 @@
+[user]
+	name = @GIT_NAME@
+	email = @GIT_EMAIL@
+[alias]
+	co = checkout
+	ci = commit
+	st = status --short --branch
+	cia = commit --amend --no-edit
+	cached = diff --cached
+[core]
+	abbrev = 12
+[commit]
+	verbose = true
+[push]
+	followTags = true
+[pull]
+	rebase = true
+[log]
+	date = iso
+	abbrevCommit = true
+[diff]
+	tool = nvim -d
+[merge]
+	conflictStyle = zdiff3
+[status]
+	showUntrackedFiles = all
+[url "git@github.com:vippsas/"]
+	insteadOf = https://github.com/vippsas/
