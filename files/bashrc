@@ -1,0 +1,73 @@
+# shellcheck disable=SC1090,SC1091
+
+[[ $- != *i* ]] && return
+
+case "$TERM" in
+xterm* | rxvt*)
+	PS1="\[\033]0;\w\007\]\w "
+	;;
+dumb)
+	# For Emacs TRAMP
+	PS1='$ '
+	;;
+*)
+	PS1='\w '
+	;;
+esac
+
+export MANWIDTH=80
+# Smart case search, quit if less than lines, no screen clear, force colors
+export LESS='-iFXR'
+export TIME_STYLE='long-iso'
+
+# Long history (except for cmds beginning with space or dupes)
+shopt -s histappend
+HISTSIZE=100000
+HISTFILESIZE=$HISTSIZE
+HISTCONTROL=ignoreboth
+
+# Extended pattern matching and support for **
+shopt -s extglob
+shopt -s globstar
+
+# Environment on MacOS somehow sets SHELL=/bin/zsh
+SHELL=/opt/homebrew/bin/bash
+
+# Brew env needed for brew bash completion
+export HOMEBREW_PREFIX=/opt/homebrew
+export HOMEBREW_CELLAR=$HOMEBREW_PREFIX/Cellar
+export HOMEBREW_REPOSITORY=$HOMEBREW_PREFIX
+
+# Disable showing new formulas when updating
+export HOMEBREW_NO_UPDATE_REPORT_NEW=1
+
+# Reset PATH since /etc/paths.d/homebrew adds /opt/homebrew/bin
+# to the end of PATH
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH=$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH
+PATH=~/.local/bin:~/go/bin:$PATH
+
+# One column, classify file types, print human sizes, use ISO date
+alias ls='ls -1FhD %Y-%m-%d\ %H:%M'
+
+alias grep='grep --color=auto'
+alias c='curl -LJO'
+
+if type -P git >/dev/null; then
+	alias g='git'
+	alias ga='git add -p'
+	alias gc='git ci'
+	alias gs='git st'
+	alias gd='git diff'
+	alias gb='git branch'
+	alias gp='git push'
+	alias gl='git pull'
+fi
+
+export EDITOR=nvim
+alias vi=nvim
+alias vim=nvim
+
+if ! shopt -oq posix && [ -r $HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh ]; then
+	. $HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh
+fi

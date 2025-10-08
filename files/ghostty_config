@@ -1,0 +1,21 @@
+command = /opt/homebrew/bin/bash -li
+
+theme = "GitHub Light Default"
+cursor-color = 1f2328
+
+font-feature = "-calt"
+font-size = 14
+
+window-padding-x = 5
+window-padding-y = 3
+window-padding-balance = true
+
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-icon = xray
+macos-option-as-alt = false
+
+copy-on-select = clipboard
+
+cursor-style = block
+shell-integration = none
