@@ -53,6 +53,11 @@ EOF
       - [ ] Connect to This Mac: When Last Connected to This Mac
 - Menu Bar
   - [ ] Screen Mirroring: Always Show in Menu Bar
+- Desktop & Dock
+  - Desktop & State Manager
+    - [ ] Show Items: disable On Desktop
+  - Widgets
+    - [ ] Show Widgets: disable On Desktop
 - Displays
   - Night Shift
     - [ ] Schedule: Sunset to Sunrise
