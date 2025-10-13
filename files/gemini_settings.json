@@ -1,5 +1,20 @@
 {
-  "selectedAuthType": "gemini-api-key",
-  "theme": "GitHub Light",
-  "preferredEditor": "neovim"
+  "general": {
+    "preferredEditor": "neovim"
+  },
+  "security": {
+    "auth": {
+      "selectedType": "gemini-api-key"
+    }
+  },
+  "ui": {
+    "theme": "GitHub Light"
+  },
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"]
+    }
+  }
 }
+

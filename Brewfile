@@ -23,6 +23,7 @@ brew 'gopls'
 brew 'uv'
 brew 'gemini-cli'
 cask 'cursor'
+cask 'google-chrome'
 
 brew 'mas'
 mas "Amphetamine", id: 937984704
