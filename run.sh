@@ -32,11 +32,13 @@ tmpl git_config ~/.config/git/config GIT_NAME GIT_EMAIL
 if [ ! -e ~/.config/nvim/.git ]; then
 	mkdir -p ~/.config/nvim
 	git clone https://codeberg.org/eju/nvimcf.git ~/.config/nvim
-else
+elif [ "$1" != -q ]; then
 	git -C ~/.config/nvim pull
 fi
 
-~/.config/nvim/plug.sh
+if [ "$1" != -q ]; then
+	~/.config/nvim/plug.sh
+fi
 
 ###############################################################################
 ### AI
