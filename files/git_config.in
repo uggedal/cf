@@ -24,3 +24,5 @@
 	conflictStyle = zdiff3
 [status]
 	showUntrackedFiles = all
+[url "git@github.com:vippsas/"]
+	insteadOf = https://github.com/vippsas/
