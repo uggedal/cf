@@ -25,6 +25,8 @@ link inputrc ~/.inputrc
 link ssh_config ~/.ssh/config
 tmpl git_config ~/.config/git/config GIT_NAME GIT_EMAIL
 
+link tmux.conf ~/.config/tmux/tmux.conf
+
 ###############################################################################
 ### Development
 ###############################################################################
