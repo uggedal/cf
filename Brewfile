@@ -3,6 +3,7 @@
 brew 'bash'
 brew 'bash-completion@2'
 brew 'git'
+brew 'tmux'
 brew 'neovim'
 brew 'tree-sitter-cli'
 brew 'ripgrep'
