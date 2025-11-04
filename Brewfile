@@ -30,3 +30,5 @@ brew 'mas'
 mas "Amphetamine", id: 937984704
 mas "uBlock Origin Lite", id: 6745342698
 mas "Slack for Desktop", id: 803453959
+
+cask 'tailscale-app'
