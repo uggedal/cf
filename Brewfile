@@ -23,6 +23,7 @@ brew 'gopls'
 
 brew 'uv'
 brew 'gemini-cli'
+cask 'chatgpt'
 cask 'cursor'
 cask 'google-chrome'
 
