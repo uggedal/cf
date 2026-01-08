@@ -96,3 +96,26 @@ Install with US region for Apple Intelligence.
 - Settings
   - General
     - [ ] Launch Amphetamine at login: enable
+
+### Firefox
+
+- Preferences
+  - General
+    - General
+      - Startup
+        - [ ] Always check if Firefox is your default browser: disable
+      - Tabs
+        - [ ] Ask before quitting with ⌘Q: disable
+        - [ ] Use AI to suggest tabs and name for tab groups: disable
+    - Files and Applications
+      - [ ] Always ask you where to save files: enable
+    - Network Settings
+      - Manual proxy configuration
+        - [ ] Socks Host: 127.0.0.1:1080
+  - Home
+    - New Windows and Tabs
+      - [ ] Homepage and new windows: Blank Page
+      - [ ] New tabs: Blank Page
+  - Extensions
+    - [ ] iCloud Passwords: install
+    - [ ] Violentmonkey: install
