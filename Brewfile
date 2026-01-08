@@ -24,3 +24,5 @@ brew 'gopls'
 brew 'mas'
 mas "Amphetamine", id: 937984704
 mas "uBlock Origin Lite", id: 6745342698
+
+cask 'firefox'
