@@ -15,6 +15,7 @@ brew 'deno'
 cask 'ghostty'
 
 cask 'chatgpt'
+cask 'codex'
 
 brew 'azure-cli'
 brew 'container'
