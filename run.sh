@@ -78,3 +78,9 @@ spelling_configs='
 for s in $spelling_configs; do
 	defaults write NSGlobalDomain "NSAutomatic${s}Enabled" -bool false
 done
+
+###############################################################################
+### Media
+###############################################################################
+
+link mpv.conf ~/.config/mpv/mpv.conf
