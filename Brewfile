@@ -30,3 +30,4 @@ mas "uBlock Origin Lite", id: 6745342698
 
 cask 'firefox'
 brew 'mpv'
+brew 'yt-dlp'
